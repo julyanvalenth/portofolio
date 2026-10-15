@@ -88,7 +88,12 @@ export function Home() {
               <Pill as="link" to="/projects" tone="light">
                 View my work →
               </Pill>
-              <Pill as="a" href="/Julyan-Valenth-CV.pdf" tone="glass">
+              <Pill
+                as="a"
+                href="/cv/Julyan%20Valenth%20Jonathan%20Sambouw_CV.pdf"
+                download="Julyan Valenth Jonathan Sambouw - CV.pdf"
+                tone="glass"
+              >
                 Download CV ↓
               </Pill>
             </div>

@@ -98,7 +98,7 @@ export function LoadingView() {
 
         <div className={styles.urlPill}>
           <span className={styles.dot} aria-hidden="true" />
-          www.julyan.dev
+          julyanvalenth.vercel.app
         </div>
 
         <div className={styles.buttonRow}>
