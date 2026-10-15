@@ -90,11 +90,12 @@ export function Home() {
               </Pill>
               <Pill
                 as="a"
-                href="/cv/Julyan%20Valenth%20Jonathan%20Sambouw_CV.pdf"
-                download="Julyan Valenth Jonathan Sambouw - CV.pdf"
+                href="/CV/Julyan-Valenth-Jonathan-Sambouw-CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 tone="glass"
               >
-                Download CV ↓
+                View CV ↗
               </Pill>
             </div>
           </div>
