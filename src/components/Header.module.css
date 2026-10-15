@@ -1,0 +1,146 @@
+.header {
+  position: fixed;
+  top: var(--nav-top);
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1180px, calc(100% - 32px));
+  z-index: 100;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 16px;
+  height: var(--nav-height);
+  padding-inline: 22px;
+  border-radius: var(--radius-nav);
+  background: linear-gradient(180deg, #ffffff1a, #ffffff08);
+  border: 1px solid var(--glass-border-strong);
+  box-shadow: 0 0 44px -18px rgba(47, 160, 255, 0.5), 0 20px 50px -20px rgba(0, 0, 0, 0.85),
+    inset 0 -1px 0 1px #ffffff0d, inset 0 1px 0 1px #ffffff3d;
+  backdrop-filter: blur(var(--blur-nav));
+  -webkit-backdrop-filter: blur(var(--blur-nav));
+}
+
+.wordmark {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.links {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  gap: 2px;
+  height: 43px;
+  padding: 4px;
+  border-radius: var(--radius-pill);
+  background: #00000047;
+  box-shadow: 0 1px 0 0 #ffffff0f, inset 0 1px 3px 0 #00000073;
+}
+
+/* Same box as FilterTabs .tab so selected pills match across the site */
+.link {
+  display: flex;
+  align-items: center;
+  padding: 9px 20px;
+  border-radius: var(--radius-pill);
+  font-size: 10.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.link:hover {
+  background: #ffffff12;
+  color: var(--text-primary);
+}
+
+.link.active {
+  background: linear-gradient(180deg, #ffffff33, #ffffff12);
+  color: var(--text-primary);
+  box-shadow: 0 0 18px -8px rgba(47, 212, 232, 0.8), 0 4px 14px -6px rgba(0, 0, 0, 0.7),
+    inset 0 1px 0 0 #ffffff4d;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-self: end;
+}
+
+.cta {
+  white-space: nowrap;
+}
+
+.menuButton {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+}
+
+.menuButton span {
+  width: 18px;
+  height: 1.5px;
+  background: var(--text-primary);
+  border-radius: 1px;
+}
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
+  padding: 14px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #ffffff1a, #ffffff08);
+  border: 1px solid var(--glass-border-strong);
+  backdrop-filter: blur(var(--blur-nav));
+  -webkit-backdrop-filter: blur(var(--blur-nav));
+}
+
+.mobileMenu a {
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.mobileMenu a:hover,
+.mobileMenu a.active {
+  background: #ffffff12;
+  color: var(--text-primary);
+}
+
+@media (max-width: 860px) {
+  .links {
+    display: none;
+  }
+
+  .wordmark span:last-child {
+    display: none;
+  }
+
+  .menuButton {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta {
+    display: none;
+  }
+}

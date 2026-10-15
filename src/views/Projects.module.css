@@ -1,0 +1,74 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-top: 148px;
+  padding-bottom: 40px;
+}
+
+.heroGlow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 30% 0%, rgba(47, 123, 255, 0.16) 0%, transparent 70%),
+    radial-gradient(ellipse at 70% 20%, rgba(47, 212, 232, 0.13) 0%, transparent 66%);
+  pointer-events: none;
+}
+
+.heroTop {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 40px;
+  align-items: end;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 10.5px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-size: clamp(40px, 8vw, 112px);
+  line-height: 0.9;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.description {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  max-width: 480px;
+  padding-bottom: 8px;
+}
+
+.filterRow {
+  position: relative;
+  margin-top: 48px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding-block: 56px;
+}
+
+.plus {
+  color: var(--accent);
+}
+
+@media (max-width: 1024px) {
+  .heroTop {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,18 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  height: 33px;
+  padding: 0 16px;
+  border-radius: var(--radius-pill);
+  background: #ffffff0d;
+  border: 1px solid var(--glass-border-md);
+  font-size: 11px;
+  color: var(--text-primary);
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}

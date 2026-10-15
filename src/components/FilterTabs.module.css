@@ -1,0 +1,33 @@
+.group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 5px;
+  border-radius: var(--radius-filter);
+  background: var(--glass-fill);
+  border: 1px solid var(--glass-border-md);
+  box-shadow: var(--glass-inset-bottom), var(--glass-inset-top);
+  backdrop-filter: blur(var(--blur-card));
+  -webkit-backdrop-filter: blur(var(--blur-card));
+}
+
+.tab {
+  padding: 9px 20px;
+  border-radius: var(--radius-pill);
+  font-size: 10.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.tab:hover {
+  color: var(--text-primary);
+}
+
+.tab.active {
+  background: linear-gradient(180deg, #ffffff33, #ffffff12);
+  color: var(--text-primary);
+  box-shadow: 0 0 18px -8px rgba(47, 212, 232, 0.8), 0 4px 14px -6px rgba(0, 0, 0, 0.7),
+    inset 0 1px 0 0 #ffffff4d;
+}

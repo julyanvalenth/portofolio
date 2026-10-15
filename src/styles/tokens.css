@@ -1,0 +1,47 @@
+:root {
+  --bg: #08090b;
+  --bg-loading: #050608;
+  --surface: #0f1215;
+
+  --text-primary: #f2f4f5;
+  --text-secondary: #8c979e;
+  --text-tertiary: #5a646b; /* separators only, too dim for body text */
+  --text-tertiary-safe: #7a858c; /* use for tertiary text at body size */
+  --on-accent: #08090b;
+
+  --accent: #2fd4e8;
+  --accent-hover: #8debf7;
+  --blue: #3b8bff;
+  --glow-blue: #2fa0ff;
+  --glow-blue-2: #2f7bff;
+  --accent-tint-bg: #2fd4e80a;
+  --accent-tint-border: #2fd4e859;
+
+  --glass-fill: linear-gradient(180deg, #ffffff13, #ffffff05);
+  --glass-border: #ffffff1a;
+  --glass-border-md: #ffffff1f;
+  --glass-border-strong: #ffffff24;
+  --glass-border-stronger: #ffffff29;
+  --glass-inset-top: inset 0 1px 0 1px #ffffff29;
+  --glass-inset-bottom: inset 0 -1px 0 1px #ffffff0a;
+  --blur-card: 20px;
+  --blur-nav: 26px;
+
+  --radius-pill: 999px;
+  --radius-card: 30px;
+  --radius-quote: 28px;
+  --radius-nav: 32px;
+  --radius-filter: 24px;
+  --radius-image: 20px;
+  --radius-xs: 5px;
+
+  --font-display: var(--font-poppins), "Segoe UI", sans-serif;
+
+  --shell-width: 1400px;
+  --shell-pad: 36px;
+  --nav-height: 63px;
+  --nav-top: 14px;
+
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 200ms ease;
+}

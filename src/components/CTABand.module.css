@@ -1,0 +1,35 @@
+.band {
+  position: relative;
+  overflow: hidden;
+  padding-block: 56px;
+}
+
+.glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(47, 123, 255, 0.3), transparent 70%);
+  pointer-events: none;
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.heading {
+  font-size: clamp(24px, 3.2vw, 44px);
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  max-width: 680px;
+}
+
+.heading :global(.plus) {
+  color: var(--accent);
+}

@@ -1,0 +1,32 @@
+.button {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 23px;
+  background: linear-gradient(180deg, #ffffff29, #ffffff0a);
+  border: 1px solid #ffffff2e;
+  color: var(--text-primary);
+  box-shadow: 0 0 30px -10px rgba(47, 160, 255, 0.8), 0 10px 30px -10px rgba(0, 0, 0, 0.8),
+    inset 0 1px 0 1px #ffffff4d;
+  backdrop-filter: blur(var(--blur-card));
+  -webkit-backdrop-filter: blur(var(--blur-card));
+  z-index: 90;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.button:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .button {
+    right: 16px;
+    bottom: 16px;
+  }
+}
